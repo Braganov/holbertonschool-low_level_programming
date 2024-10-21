@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE > C | cp C.c C.o
+gcc -c $CFILE > ${CFILE::-2}".o"
