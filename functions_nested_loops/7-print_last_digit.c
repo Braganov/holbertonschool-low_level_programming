@@ -1,20 +1,16 @@
 #include "main.h"
+
 /**
- * print_last_digit - Write a function that prints the last digit of a number.
- * @n: argument to be check
+ * print_last_digit - check the code
+ * @n: The number to print the la digit of
  *
- * Return: absolute value of n
+ * Return: the last digit
  */
 int print_last_digit(int n)
 {
-	int baptiste;
-
-	absVal = n % 10;
-
-	if (baptiste < 0)
-	{
-		baptiste = baptiste * -1;
-	}
-	_putchar(baptiste + '0');
-	return (baptiste);
+        n = n % 10;
+        if (n < 0)
+                n = n * -1;
+        _putchar(n + '0');
+        return (n);
 }
