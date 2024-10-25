@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
+ *prints the alphabet - only use _putchar
  *
- *
- *   Return: Always 0 (Success)
+ *Return: Always 0 (Success)
  *
 */
 
