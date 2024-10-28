@@ -11,31 +11,24 @@
 
 void more_numbers(void)
 {
-	int m, i;
+	int i;
 
 	for (i = 0; i <= 10; i++)
 {
 	{
-		_putchar('0');
-		_putchar('1');
-		_putchar('2');
-		_putchar('3');
-		_putchar('4');
-		_putchar('5');
-		_putchar('6');
-		_putchar('7');
-		_putchar('8');
-		_putchar('9');
-		_putchar('1');
-		_putchar('0');
-		_putchar('1');
-		_putchar('1');
-		_putchar('1');
-		_putchar('2');
-		_putchar('1');
-		_putchar('3');
-		_putchar('1');
-		_putchar('4');
+		int main(void)
+{
+		char tobeprinted[19] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 0, 1, 1, 1, 2, 1, 3, 1, 4};
+		int a = 0
+
+		while (a < 19)
+		{
+		_putchar(tobeprinted[a]);
+		a++;
+		}
+		_putchar(10);
+		return (0);
+ 		}
 	}
 	_putchar('\n');
 }
