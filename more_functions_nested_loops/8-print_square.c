@@ -3,7 +3,7 @@
 /**
  * print_square - Draws a diagonal line on the terminal.
  *
- * @n: n is the number of times the character \ should be printed
+ * @size : n is the number of times the character \ should be printed
  *
  * Return: void
  */
