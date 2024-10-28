@@ -36,7 +36,6 @@ void more_numbers(void)
 		_putchar('3');
 		_putchar('1');
 		_putchar('4');
-		_putchar('\n');
 	}
 	_putchar('\n');
 }
