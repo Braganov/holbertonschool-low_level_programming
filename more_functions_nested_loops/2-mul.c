@@ -2,8 +2,8 @@
 
 /**
  * mul - Entry point
- *@c : braga
- *
+ *@a : braga
+ *@b : braga
  *
  *   Return: Always 0 (Success)
  *
