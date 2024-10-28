@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+void print_numbers(void);
 int mul(int a, int b);
 int _isdigit(int c);
 void print_to_98(int n);
