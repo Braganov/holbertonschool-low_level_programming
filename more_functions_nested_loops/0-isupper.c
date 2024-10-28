@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * isupper - check the code
- *@c
+ * _isupper - check the code
+ *@c: cool
  *
  *
  *   Return: Always 0 (Success)
