@@ -1,22 +1,32 @@
 #include "main.h"
 
 /**
- * print_line - Write a function that draws a straight line in the terminal.
+ * print_diagonal - Draws a diagonal line on the terminal.
  *
- * @n: number of times the character _ should be printed
+ * @n: n is the number of times the character \ should be printed
  *
+ * Return: void
  */
 
 void print_square(int size)
 {
-        int i;
+        int a, b;
 
-        for (i = 0; i < n; i++)
+        for (a = 1; a <= size; a++)
         {
-                _putchar ('#');
+                for (b = 1; b <= size; b++)
+                {
+		_putchar('#');
+		}
+		_putchar('\n');
         }
-        _putchar ('\n');
+        if (size < 1)
+                _putchar('\n');
 }
+
+
+
+
 
 
 
