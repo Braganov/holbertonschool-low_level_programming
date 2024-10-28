@@ -13,7 +13,7 @@ void print_line(int n)
 {
 	int n, s;
 
-	if (n < 0)
+	if (n > 0)
 		continue;
 	s = n * '_'
 		_putchar("%c", s)
