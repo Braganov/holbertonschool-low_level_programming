@@ -1,37 +1,32 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _atoi - Convert a string to an integer.
- *
- * @s: input string
- *
- * Return: integer
+ * _atoi - converts a string to an integer.
+ * @s: the string to convert
+ * Return: the converted string.
  */
-
 int _atoi(char *s)
 {
-    int sign = 1;
-    int result = 0;
-    int index = 0;
+	short boolean;
+	int i, minus, result;
 
-    // تحديد علامة الرقم (موجب أو سالب)
-    while (s[index] != '\0' && (s[index] < '0' || s[index] > '9'))
-    {
-        if (s[index] == '-')
-        {
-            sign *= -1;  // تغيير العلامة إذا تم العثور على علامة سالب
-        }
-        index++;
-    }
+	i = minus = result = boolean = 0;
+	minus = -1;
 
-    // تحويل الأرقام إلى عدد صحيح
-    while (s[index] >= '0' && s[index] <= '9')
-    {
-        result = result * 10 + (s[index] - '0'); // تحويل الحرف إلى رقم وإضافته للنتيجة
-        index++;
-    }
+	while (s[i] != '\0')
+	{
+		if (s[i] == '-')
+			minus *= -1;
 
-    return result * sign; // تعيين العلامة النهائية للنتيجة
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result *= 10;
+			result -= (s[i] - '0');
+			boolean = 1;
+		}
+		else if (boolean == 1)
+			break;
+		i++;
+	}
+	result *= minus;
+	return (result);
 }
-
