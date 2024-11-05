@@ -2,19 +2,20 @@
 #include <stdio.h>
 
 /**
- * _strncat - concatenate strings, defining the size of second string.
- * @*s: string with concatenation
- * @b: string to be concatenated
- * @n: size of second string
- * Return: Always 0.
+ * _memset - fills memory with a constant byte.
+ * @s: source string
+ * @b: the contant byte for filling
+ * @n: lenght of buffer
+ * Return: new string.
  */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i = 0;
 
-char *_memset(char *s, char b, unsigned int n);
-
-	unsigned int i;
-
-	for (i=0 ; i<=n ; i++)
-	s[i]=b;
-
+	while (i < n)
+	{
+		*(s + i) = b;
+		i++;
+	}
 	return (s);
-
+}
