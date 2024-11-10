@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print the number of arguments in the program.
+ * main - print all arguments of the program separated by new line.
  * @argc: argument count or size of arguments.
  * @argv: argument vector
  *
@@ -13,9 +13,9 @@ int main(int argc, char **argv)
 
 	while (number < argc)
 	{
+		printf("%s\n", *(argv + number));
 		number++;
 		(*argv)++;
 	}
-	printf("%i\n", number - 1);
 	return (0);
 }
