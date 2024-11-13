@@ -4,7 +4,7 @@
 /**
  * _strdup- copy a string.
  * @str: string to be copied.
- *
+ *create a duplicate of a string 
  *
  * Return: pointer to the copied string.
  */
