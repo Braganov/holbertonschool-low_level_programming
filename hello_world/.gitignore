@@ -1,0 +1,26 @@
+# Ignore compiled binaries and object files
+*
+!*.*
+!*/
+*.o
+*.out
+a.out
+
+# Ignore editor temporaries
+*~
+.*.swp
+.*.swo
+
+# Ignore dependency files
+*.d
+
+# Ignore lib files
+*.a
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+
+# Ignore OS specific files
+.DS_Store
+Thumbs.db
